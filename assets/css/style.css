@@ -27,6 +27,7 @@ body {
   font-size: 2em;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: .1em .75em;
   margin-bottom: .2em;
   background: #2c3e50;
