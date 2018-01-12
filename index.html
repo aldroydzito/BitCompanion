@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BitCompanion</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+  <div id="app">
+    <div id="currency-alert" class="alert warning" style="font-size:1em">
+      <i class="fa fa-info-circle margin-right"></i>
+      <span>
+        You need at least one currency.
+      </span>
+    </div>
+    <div id="get-currencies" style="display:none">
+      <button id="btn-update" class="btn" onclick="update()">
+        <i class="fa fa-repeat margin-right"></i>FORCE UPDATE</button>
+    </div>
+
+    <div id="currencies"></div>
+    <div class="new-panel">
+      <div style="display:flex;align-items: center">
+        <i style="font-size: .9em" class="fa fa-btc"></i>
+        <input type="text" placeholder="Add currency..." id="new-currency">
+        <button id="btn-add" class="btn" onclick="addCurrency($('#new-currency'))">
+          <i class="fa fa-plus"></i>
+        </button>
+        <i style="font-size: .5em;color: #DDD;" class="fa fa-info-circle"></i>
+      </div>
+      <div id="add-alert" class="alert">
+      </div>
+    </div>
+
+  </div>
+
+  <div id="credits">
+    <div style="font-size: .75em;">
+      <span>made with</span>
+      <i class="fa fa-heart" style="color: #e74c3c; margin: 0 1px;"></i>
+      <span>by aldroyd</span>
+    </div>
+    <div style="display:flex;align-items:center">
+      <img class="margin-right" src="https://files.coinmarketcap.com/static/img/coins/16x16/bitcoin.png">
+      <span style="font-size: 10px">1X2VHmXasiXZJNJU4SkgqrkEsH7EtYtmB</span>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
